@@ -12,8 +12,8 @@
     
     <script src="js/auth.js"></script>
     <script>
-    if (!auth || !auth.isAuthenticated || !auth.isAuthenticated()) {
-        window.location.href = 'adminlogin.html';
+    if (sessionStorage.getItem('isLoggedIn') !== 'true') {
+        window.location.href = "adminlogin.html";
     }
     </script>
     <script src="js/logopdf.js"></script>
